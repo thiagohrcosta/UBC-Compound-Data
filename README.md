@@ -81,4 +81,37 @@ With that in mind:
 > - Selectors: pos-x   pos-y <br>
 > - Predicate: pos? <br>
   
+ # PROBLEM 1:
  
+ *** QUESTION A: ***
+ 
+Design a data definition to represent a movie, including title, budget, and year released. To help you to create some examples, find some interesting movie facts below: <br>
+- "Titanic" - budget: 200000000 released: 1997<br>
+- "Avatar" - budget: 237000000 released: 2009<br>
+- "The Avengers" - budget: 220000000 released: 2012<br>
+
+Answer: 
+
+> (define-struct movie (title budget year)) <br>
+> ;; movie is (make-movie String Number Number) <br>
+> ;; movie is (make-movie String Natural Natural) <br>
+> <br>
+> ;; interp. movie Title-String, budget-Natural Year-Natural <br>
+> <br>
+> (define Movie1 (make-movie "Titanic" "200000000" "1997")) <br>
+> (define Movie2 (make-movie "Avatar" "237000000" "2009")) <br>
+> (define Movie3 (make-movie "The Avengers" "220000000" "2012")) <br>
+> <br>
+> #; <br>
+> (define (fn-for-movie m) <br>
+>   (... (movie-title m)    ; produces a string <br>
+>        (movie-budget m)   ; produces a Natural number <br>
+>        (movie-year m)))   ; produces a Natural number <br>
+> <br>
+> ;; Template rules used: <br>
+> ;; Compound 3 fields. <br>
+
+
+*** Question B ***
+
+You have a list of movies you want to watch, but you like to watch your rentals in chronological order. Design a function that consumes two movies and produces the title of the most recently released movie. Note that the rule for templating a function that consumes two compound data parameters is for the template to include all the selectors for both  parameters.
