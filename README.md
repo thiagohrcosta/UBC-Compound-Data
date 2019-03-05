@@ -71,14 +71,14 @@ With that in mind:
   
 ### A Structure definition defines: 
 
-- Constructor: make -<structure-name>
-- Selector: <structure-name> - <field-name>
-- Predicate: <structure-name> ?
+> - Constructor: make -<structure-name><br>
+> - Selector: <structure-name> - <field-name><br>
+> - Predicate: <structure-name> ? <br>
  
 (define-struct pos (x y) defines:
 
-- Constructor: make-pos
-- Selectors: pos-x   pos-y
-- Predicate: pos?
+> - Constructor: make-pos <br>
+> - Selectors: pos-x   pos-y <br>
+> - Predicate: pos? <br>
   
  
