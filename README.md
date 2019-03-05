@@ -65,8 +65,20 @@ With that in mind:
 
 ### To form a structure definitions
 
-> (define-struct <name1> (<name2>...))
-> ; Structure "name" where name 1 = pos  and "Field Name" where name2 = x y 
-> (define-struct pos (x y))
+> (define-struct <name1> (<name2>...))<br>
+> ; Structure "name" where name 1 = pos  and "Field Name" where name2 = x y <br>
+> (define-struct pos (x y)) <br>
+  
+### A Structure definition defines: 
+
+- Constructor: make -<structure-name>
+- Selector: <structure-name> - <field-name>
+- Predicate: <structure-name> ?
+ 
+(define-struct pos (x y) defines:
+
+- Constructor: make-pos
+- Selectors: pos-x   pos-y
+- Predicate: pos?
   
  
