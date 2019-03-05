@@ -71,9 +71,9 @@ With that in mind:
   
 ### A Structure definition defines: 
 
-> - Constructor: make -<structure-name><br>
-> - Selector: <structure-name> - <field-name><br>
-> - Predicate: <structure-name> ? <br>
+> - Constructor: make - < structure-name ><br>
+> - Selector: < structure-name > - < field-name ><br>
+> - Predicate: < structure-name > ? <br>
  
 (define-struct pos (x y) defines:
 
