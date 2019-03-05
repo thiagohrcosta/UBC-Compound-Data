@@ -65,7 +65,7 @@ With that in mind:
 
 ### To form a structure definitions
 
-> (define-struct <name1> (<name2>...))<br>
+> (define-struct < name1 > ( < name2 > ... ))<br>
 > ; Structure "name" where name 1 = pos  and "Field Name" where name2 = x y <br>
 > (define-struct pos (x y)) <br>
   
