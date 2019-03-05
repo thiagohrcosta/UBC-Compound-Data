@@ -81,7 +81,7 @@ With that in mind:
 > - Selectors: pos-x   pos-y <br>
 > - Predicate: pos? <br>
   
- # PROBLEM 1:
+ # Problem:
  
  **Question A:**
  
