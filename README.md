@@ -25,4 +25,48 @@ What you'll learn:
 4. How to simplify the structure of your program using common patterns
 5. Recognize and represent more complicated information
 
-## MODULE 2: How To Design Data (HTDD)
+## MODULE 3: How To Design Compound Data
+
+In the third lesson from **module 3B: How to Design Data - Compound Data**, we learn how to use structures when two or more values naturally belong together. 
+
+
+> (define-struct ball (x y)) <br>
+> ;; Ball is (make-ball Number Number) <br>
+> ;; interp. a ball at position x, y <br>
+> <br>
+> (define BALL-1 (make-ball 6 10)) <br>
+> <br>
+> #; <br>
+> (define (fn-for-ball b) <br>
+>   (... (ball-x b)     ;Number <br>
+>        (ball-y b)))   ;Number <br>
+> ;; Template rules used: <br>
+> ;;  - compound: 2 fieldsv <br>
+
+When do we need two or more pieces of information we need to use compound data. The simple structure is that:
+
+> (define-struct pos (xy)) <br>
+
+- pos: struct name<br>
+- x y: field names<br>
+
+Whe can create some examples for this become more clear, let´s see:
+
+> (define P1 (make-pos 3 6))<br>
+> (define P2 (make-pos 2 8))<br>
+
+- P1: become a constant.
+- 3 and 6 are the pos-x and pos-y coordinates. 
+
+With that in mind: 
+
+> (pos-x P1) ; produces 3
+> (pos-y P2) ; produces 8
+
+### To form a structure definitions
+
+> (define-struct <name1> (<name2>...))
+> ; Structure "name" where name 1 = pos  and "Field Name" where name2 = x y 
+> (define-struct pos (x y))
+  
+ 
