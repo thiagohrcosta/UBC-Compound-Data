@@ -1,7 +1,3 @@
-
-;; movie-starter.rkt
-
-;; =================
 ;; Data definitions:
 
 ; 
